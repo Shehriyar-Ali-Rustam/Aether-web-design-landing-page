@@ -1,32 +1,72 @@
-# React + TypeScript + Vite
+# Aether — AI-Powered Web Design Agency Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, animated landing page for an AI-powered web design agency. Built with React 19, TypeScript, Vite, Tailwind CSS v4, and Framer Motion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fullscreen hero with video background and interactive particle canvas
+- Smooth scroll-driven animations powered by Framer Motion
+- Liquid glass navbar with blur effect
+- Sections: Hero, Intro, How It Works, Features, CTA, Footer
+- Fully responsive layout
+- TypeScript throughout
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Tool | Version |
+|---|---|
+| React | 19 |
+| TypeScript | 6 |
+| Vite | 8 |
+| Tailwind CSS | 4 |
+| Framer Motion | 12 |
+| Lucide React | 1 |
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+**Requirements:** Node.js 20 or higher
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+# Clone the repo
+git clone https://github.com/Shehriyar-Ali-Rustam/Aether-web-design-landing-page.git
+cd Aether-web-design-landing-page
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Scripts
+
+```bash
+npm run dev       # Start development server
+npm run build     # Type-check and build for production
+npm run preview   # Preview production build locally
+npm run lint      # Run oxlint
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── HeroSection.tsx
+│   ├── IntroSection.tsx
+│   ├── HowItWorksSection.tsx
+│   ├── FeaturesSection.tsx
+│   ├── CTASection.tsx
+│   ├── Footer.tsx
+│   ├── ParticleCanvas.tsx
+│   └── ParticleTitle.tsx
+├── App.tsx
+└── main.tsx
+```
+
+## License
+
+MIT
